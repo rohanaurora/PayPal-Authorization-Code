@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>852D2664-E674-4617-AF86-A8498364E155</string>
+	<string>17D53F5B-B75F-4F65-9184-5987CAE6DEA4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>NativeApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9CA48C68-AA5E-4816-9502-BF2F38D93169</key>
-		<string>https://github.corp.ebay.com/roaurora/Native-PayPal-Login.git</string>
+		<key>C7888BB8-FD48-4C85-B383-67643C021021</key>
+		<string>https://github.com/rohanaurora/PayPal-Authorization-Code.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>NativePPLogin/NativeApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9CA48C68-AA5E-4816-9502-BF2F38D93169</key>
+		<key>C7888BB8-FD48-4C85-B383-67643C021021</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.corp.ebay.com/roaurora/Native-PayPal-Login.git</string>
+	<string>https://github.com/rohanaurora/PayPal-Authorization-Code.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9CA48C68-AA5E-4816-9502-BF2F38D93169</string>
+	<string>C7888BB8-FD48-4C85-B383-67643C021021</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9CA48C68-AA5E-4816-9502-BF2F38D93169</string>
+			<string>C7888BB8-FD48-4C85-B383-67643C021021</string>
 			<key>IDESourceControlWCCName</key>
-			<string>NativeLogin</string>
+			<string>PayPal-Authorization-Code</string>
 		</dict>
 	</array>
 </dict>

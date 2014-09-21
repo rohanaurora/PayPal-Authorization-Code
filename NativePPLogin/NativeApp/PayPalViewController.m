@@ -64,12 +64,17 @@
     }
 
 */
-    
-// Call programmtically
-    [self getUserAuthorizationForProfileSharing];
+//    [self getUserAuthorizationForProfileSharing];
+
 
 }
+
+-(void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+     [self getUserAuthorizationForProfileSharing];
+}
+
 
 #pragma mark - Authorize Profile Sharing
 

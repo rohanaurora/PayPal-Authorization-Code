@@ -12,19 +12,14 @@
 
 #define kPayPalEnvironment PayPalEnvironmentSandbox
 
-@interface PayPalViewController ()
+@interface PayPalViewController () {
+    dispatch_once_t once;
+}
+
 @property(nonatomic, strong, readwrite) PayPalConfiguration *payPalConfig;
 @end
 
 @implementation PayPalViewController
-
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    // Preconnect to PayPal early
-    [PayPalMobile preconnectWithEnvironment:self.environment];
-}
 
 
 - (void)viewDidLoad
@@ -42,37 +37,23 @@
     self.payPalConfig.languageOrLocale = [NSLocale preferredLanguages][0];
     self.payPalConfig.payPalShippingAddressOption = PayPalShippingAddressOptionPayPal;
     self.environment = kPayPalEnvironment;
-    
-// Get authorization code using IBAction/UIButton
-    
-/*
-    UIButton* testButn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [testButn setFrame:CGRectMake(130, 195, 70, 45)];
-    [testButn setImage:[UIImage imageNamed:@"BuyButton"] forState:UIControlStateNormal];
-    [testButn setImage:[UIImage imageNamed:@"BuyButton"]   forState:UIControlStateSelected];
-    [testButn addTarget:self action:@selector(getUserAuthorizationForProfileSharing) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:testButn];
-
 }
 
 
--(void)stayPressed:(UIButton *) sender {
-    if (sender.selected == YES) {
-        sender.selected = NO;
-    } else{
-        sender.selected = YES;
-    }
-
-*/
-//    [self getUserAuthorizationForProfileSharing];
-
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Preconnect to PayPal early
+    [PayPalMobile preconnectWithEnvironment:self.environment];
 }
 
--(void) viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-     [self getUserAuthorizationForProfileSharing];
+
+- (void)viewDidAppear:(BOOL)animated {
+    dispatch_once(&once, ^{
+     
+        [self getUserAuthorizationForProfileSharing];
+    });
+    [PayPalMobile preconnectWithEnvironment:self.environment];
 }
 
 

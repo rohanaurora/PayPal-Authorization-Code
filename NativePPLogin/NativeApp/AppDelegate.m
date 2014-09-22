@@ -11,7 +11,6 @@
 #import "PayPalViewController.h"
 
 static NSString const *kSandboxEnvironment = @"AWUrShDrIsirRkPOsFgGCYEX04f9DIsfmJryD0EglO-KlfA3Nkwg-CU4cmAr";
-static NSString const *kQAEnvironment = @"AX1-ZxAZfMuB0a0UOIBHal9gct-Ju1qSlvsh1EB31WLJLoi0ByVWMoJRnQAZ";
 
 @implementation AppDelegate
 

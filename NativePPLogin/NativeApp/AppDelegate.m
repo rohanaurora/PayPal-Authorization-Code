@@ -10,7 +10,9 @@
 #import "PayPalMobile.h"
 #import "PayPalViewController.h"
 
-static NSString const *kSandboxEnvironment = @"AWUrShDrIsirRkPOsFgGCYEX04f9DIsfmJryD0EglO-KlfA3Nkwg-CU4cmAr";
+#warning Please use your Client ID of your REST API app - https://developer.paypal.com/webapps/developer/applications/myapps
+
+static NSString const *kSandboxEnvironment = @"YOUR_CLIENT_ID_FOR_SANDBOX";
 
 @implementation AppDelegate
 

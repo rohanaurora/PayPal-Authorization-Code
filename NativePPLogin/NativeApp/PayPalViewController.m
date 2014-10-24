@@ -85,7 +85,6 @@
 }
 
 
-
 - (void)sendProfileSharingAuthorizationToServer:(NSDictionary *)authorization {
 
     NSLog(@"Here is your authorization  %@:", authorization);

@@ -10,7 +10,7 @@
 #import "PayPalMobile.h"
 #import "PayPalViewController.h"
 
-#warning Please use your Client ID of your REST API app - https://developer.paypal.com/webapps/developer/applications/myapps
+#warning Please use the Client ID of your REST API app - https://developer.paypal.com/webapps/developer/applications/myapps
 
 static NSString const *kSandboxEnvironment = @"YOUR_CLIENT_ID_FOR_SANDBOX";
 

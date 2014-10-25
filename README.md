@@ -4,8 +4,10 @@
 
 A simple project addressing strange behaviour while generating authorization code using PayPal iOS SDK 2.3.2 in Xcode 5.1.1 and Xcode 6.0.1. 
 
+###Status  
+This project is discontinued since, the issues were resolved successfully.
 
-###Issues Raised - 
+###Issues Raised 
 
 The following issues have been raised [here](https://github.com/paypal/PayPal-iOS-SDK/issues/192)
 

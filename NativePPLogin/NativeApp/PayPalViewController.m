@@ -48,6 +48,7 @@
 }
 
 
+// Call viewDidAppear: only once.
 - (void)viewDidAppear:(BOOL)animated {
     dispatch_once(&once, ^{
      
@@ -60,6 +61,7 @@
 
 - (void)getUserAuthorizationForProfileSharing {
     
+    // Currently available scope-values to which the user can be asked to consent.
     NSSet *scopeValues = [NSSet setWithArray:@[kPayPalOAuth2ScopeEmail, kPayPalOAuth2ScopeAddress, kPayPalOAuth2ScopeOpenId, kPayPalOAuth2ScopePhone]];
     
     PayPalProfileSharingViewController *profileSharingPaymentViewController = [[PayPalProfileSharingViewController alloc] initWithScopeValues:scopeValues configuration:self.payPalConfig delegate:self];

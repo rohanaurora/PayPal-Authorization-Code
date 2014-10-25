@@ -54,6 +54,7 @@
      
         [self getUserAuthorizationForProfileSharing];
     });
+    return;
 }
 
 

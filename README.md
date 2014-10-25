@@ -1,6 +1,6 @@
 #Auth Code using PayPal iOS SDK
 
-###Project 
+###Project Goal 
 
 A simple project addressing strange behaviour while generating authorization code using PayPal iOS SDK 2.3.2 in Xcode 5.1.1 and Xcode 6.0.1. 
 

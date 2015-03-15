@@ -22,7 +22,7 @@ The following issues have been raised [here](https://github.com/paypal/PayPal-iO
 
 ###Instructions 
 
-1) Open `NativeApp.xcodeproj` in [Xcode Version 5.1.1](https://developer.apple.com/downloads/index.action#). 
+1) Open `NativeApp.xcodeproj` in the latest [Xcode](https://developer.apple.com/downloads/index.action#). 
 
 2) Build the project Command (⌘) + R
 
